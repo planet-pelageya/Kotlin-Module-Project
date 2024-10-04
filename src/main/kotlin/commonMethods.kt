@@ -1,4 +1,4 @@
-class commonMethods(override var index: Int,
+class CommonMethods(override var index: Int,
                     override var header: String):showing {
     companion object{
         fun takecommand(): String {
@@ -22,7 +22,7 @@ class commonMethods(override var index: Int,
                     println("${i.index}. ${i.header}")
                 }
                 println("${variants.size + 1 }. Выход")
-                val command = commonMethods.takecommand()
+                val command = CommonMethods.takecommand()
                 return command
             }
 
