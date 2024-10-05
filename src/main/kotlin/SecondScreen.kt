@@ -1,13 +1,10 @@
-
         fun secondScreen(archive: Archive) {
             while (true) {
                 try {
                 println("Выберите команду\n1.Создать заметку\n2.Выбрать и прочитать заметку\n3.Выход")
-                val command = CommonMethods.takecommand().toInt()
+                val command = CommonMethods.takeCommandFromUser().toInt()
                     when (command) {
-                        1 -> {
-                            archive.notes.add(addnote())
-                        }
+                        1 -> archive.notes.add(addNote())
 
                         2 -> {
                             while (true) {
@@ -25,7 +22,9 @@
                                     continue}
                             }
                         }
+
                         3 -> return
+
                         in 4..Int.MAX_VALUE -> println("Такой цифры нет")
                     }
                 }catch (e:NumberFormatException){println("Введите цифру")

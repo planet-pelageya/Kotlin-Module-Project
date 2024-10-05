@@ -1,20 +1,17 @@
-
-        fun addArchive() {
+            fun addArchive() {
             println("Введите текстовое название для имени")
-            var name = CommonMethods.takecommand()
-            var instance = Archive(name)
+            var name = CommonMethods.takeCommandFromUser()
+            var makeArchive = Archive(name)
             println("Архив ${name} создан")
         }
 
-        fun addnote():Note {
+        fun addNote():Note {
             println("Введите текстовое название для имени")
-            var name = CommonMethods.takecommand()
+            var name = CommonMethods.takeCommandFromUser()
             println("Введите текст")
-            var text = CommonMethods.takecommand()
+            var text = CommonMethods.takeCommandFromUser()
             val instance = Note(name, text)
             println("Заметка создана")
             return instance
         }
-
-
 

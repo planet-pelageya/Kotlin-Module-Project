@@ -1,12 +1,9 @@
 import Archive.Companion.allInstances
-import Archive.Companion.count
-
-
-        fun firstScreen() {
+        fun showFirstScreen() {
             while (true) {
                 try {
                     println("Выберите команду\n1.Создать архив\n2.Выбрать архив\n3.Выход")
-                    var enter = CommonMethods.takecommand()
+                    var enter = CommonMethods.takeCommandFromUser()
                     when (enter.toInt()) {
                         1 -> addArchive()
                         2 -> {
@@ -24,7 +21,6 @@ import Archive.Companion.count
                                 }
                             }
                         }
-
                         3 -> break
                         in 4..Int.MAX_VALUE -> println("Такой цифры нет")
                     }
