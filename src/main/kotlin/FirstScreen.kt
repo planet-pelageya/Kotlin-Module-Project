@@ -5,7 +5,9 @@ import Archive.Companion.allInstances
                     println("Выберите команду\n1.Создать архив\n2.Выбрать архив\n3.Выход")
                     var enter = CommonMethods.takeCommandFromUser()
                     when (enter.toInt()) {
+
                         1 -> addArchive()
+
                         2 -> {
                             while (true) {
                                 try {
@@ -21,7 +23,9 @@ import Archive.Companion.allInstances
                                 }
                             }
                         }
+
                         3 -> break
+
                         in 4..Int.MAX_VALUE -> println("Такой цифры нет")
                     }
                 } catch (e: NumberFormatException) {

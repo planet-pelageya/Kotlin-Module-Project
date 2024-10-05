@@ -4,6 +4,7 @@
                 println("Выберите команду\n1.Создать заметку\n2.Выбрать и прочитать заметку\n3.Выход")
                 val command = CommonMethods.takeCommandFromUser().toInt()
                     when (command) {
+
                         1 -> archive.notes.add(addNote())
 
                         2 -> {
