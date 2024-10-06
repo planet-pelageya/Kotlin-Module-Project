@@ -10,7 +10,7 @@
                         2 -> {
                             while (true) {
                                 try {
-                                    val choose = CommonMethods.choose(archive.notes)
+                                    val choose = CommonMethods.chooseCommand(archive.notes)
                                     when (choose.toInt()) {
                                         in 1..archive.notes.size -> {
                                             println(archive.notes[choose.toInt() - 1].text)

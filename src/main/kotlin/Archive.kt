@@ -1,4 +1,4 @@
-class Archive(override var header:String, var notes :MutableList<Note> = mutableListOf(), override var index: Int = 1) : showing {
+class Archive(override var header:String, var notes :MutableList<Note> = mutableListOf(), override var index: Int = 1) : Showing {
 
     companion object{
         var allInstances =mutableListOf<Archive>()

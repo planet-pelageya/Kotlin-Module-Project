@@ -1,4 +1,4 @@
-interface showing {
+interface Showing {
     var index: Int
     var header: String
 }

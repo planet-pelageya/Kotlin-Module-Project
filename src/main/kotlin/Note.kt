@@ -1,4 +1,4 @@
-class Note(override var     header:String, var text:String, override var index: Int = 1):showing {
+class Note(override var     header:String, var text:String, override var index: Int = 1):Showing {
     companion object{
         var count = 1
     }
